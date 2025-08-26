@@ -22,7 +22,7 @@ else:
     st.warning("Logo bulunamadı. 'logo.png' dosyasını app.py ile aynı klasöre kopyalayabilirsin.")
 
 st.title("🌞 Ortec Solar Sürücü Hesaplama Modülü")
-st.markdown("VOC, Pm, K ve Pp değerlerini girin. Aşağıdaki **Sistem 1–5** blokları Excel’deki hesaplara göre çalışır.")
+st.markdown("Kullanmış olduğunuz solar panelin ve motorun değerlerini girin. Aşağıda size uygun sistem hesaplamalarını otomatik olarak yapacaktır.")
 
 # ========================
 # GİRİŞLER (varsayılanlar)
@@ -93,7 +93,7 @@ if submitted:
             "N": r["N"], "S": r["S"], "Pf": r["Pf"], "Vtoc": r["Vtoc"], "Kf": r["Kf"],
         })
 
-    df = pd.DataFrame(rows, columns=["Sistem","Taban","Voc","Pm","K","Pp","N","S","Pf","Vtoc","Kf"])
+    df = pd.DataFrame(rows, columns=["Sistem","Voc","Pm","K","Pp","N","S","Pf","Vtoc","Kf"])
     st.markdown("### Tüm Sistemler Özeti")
     st.dataframe(df, use_container_width=True)
 
