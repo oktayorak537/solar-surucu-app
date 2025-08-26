@@ -33,8 +33,8 @@ with st.form("inputs"):
         voc = st.number_input("Voc (Panel Açık Devre Voltajı)", min_value=0.0, step=0.1, format="%.2f", value=49.6)
         k   = st.number_input("K (Güvenlik Katsayısı)", min_value=0.0, step=0.1, format="%.2f", value=1.5)
     with col2:
-        pm  = st.number_input("Pm (Panel Watt)", min_value=0.0, step=1, format="%.2f", value=550.0)
-        pp  = st.number_input("Pp (Pompa Gücü)", min_value=0.0, step=1, format="%.2f", value=0.0)
+        pm  = st.number_input("Pm (Panel Watt)", min_value=0.0, step=0.1, format="%.2f", value=550.0)
+        pp  = st.number_input("Pp (Pompa Gücü)", min_value=0.0, step=0.1, format="%.2f", value=0.0)
 
     submitted = st.form_submit_button("Hesapla")
 
