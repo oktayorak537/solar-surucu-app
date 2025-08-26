@@ -129,4 +129,5 @@ else:
 # ALT BAŞLIK
 # ========================
 st.markdown("---")
-st.markdown("<h6 style='text-align:center;'>Alt Başlık</h6>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align:center;'>Ortec Solar</h6>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align:center;'>www.enerjitoptan.com</h6>", unsafe_allow_html=True)
