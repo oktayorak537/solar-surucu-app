@@ -53,11 +53,11 @@ def hesapla_sistem(voc, pm, k, pp, taban):
 # SİSTEMLER
 # ========================
 sistemler = [
-    ("220V Pompa", 420V),
-    ("380V - 1. Seçenek", 662V),
-    ("380V - 2. Seçenek", 700V),
-    ("380V - 3. Seçenek", 720V),
-    ("440V Pompa", 720V),
+    ("220V Pompa", 420),
+    ("380V - 1. Seçenek", 662),
+    ("380V - 2. Seçenek", 700),
+    ("380V - 3. Seçenek", 720),
+    ("440V Pompa", 720),
 ]
 
 # ========================
